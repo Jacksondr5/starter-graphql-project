@@ -4,7 +4,9 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "nodemon src/index.js"
+    "start": "nodemon src/index.js",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "dependencies": {
     "apollo-server-express": "^1.1.7",
@@ -14,6 +16,8 @@
     "graphql": "^0.11.7",
     "graphql-tools": "^2.5.1",
     "mssql": "^4.1.0",
-    "nodemon": "^1.14.12"
-  }
+    "nodemon": "^1.14.12",
+    "snyk": "^1.103.4"
+  },
+  "snyk": true
 }
